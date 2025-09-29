@@ -1,4 +1,4 @@
-"""Python setup.py for project_name package"""
+"""Python setup.py for fast_api_demo package"""
 import io
 import os
 from setuptools import find_packages, setup
@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 
 def read(*paths, **kwargs):
     """Read the contents of a text file safely.
-    >>> read("project_name", "VERSION")
+    >>> read("fast_api_demo", "VERSION")
     '0.1.0'
     >>> read("README.md")
     ...
@@ -30,17 +30,17 @@ def read_requirements(path):
 
 
 setup(
-    name="project_name",
-    version=read("project_name", "VERSION"),
-    description="project_description",
-    url="https://github.com/author_name/project_urlname/",
+    name="fast_api_demo",
+    version=read("fast_api_demo", "VERSION"),
+    description="Awesome fast_api_demo created by 2150997113",
+    url="https://github.com/2150997113/fast_api_demo/",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
-    author="author_name",
+    author="2150997113",
     packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
     entry_points={
-        "console_scripts": ["project_name = project_name.__main__:main"]
+        "console_scripts": ["fast_api_demo = fast_api_demo.__main__:main"]
     },
     extras_require={"test": read_requirements("requirements-test.txt")},
 )
